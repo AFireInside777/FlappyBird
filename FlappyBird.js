@@ -33,9 +33,9 @@ function ProcessScore(){
             let x = parseInt(scorevaluestring[snumber])
             scorearray.push(x)
         }
-        score.src = "/static/" + scorearray[0] + ".png"
+        score.src =  scorearray[0] + ".png"
         background.appendChild(score2)     
-        score2.src = "/static/" + scorearray[1] + ".png"  
+        score2.src = scorearray[1] + ".png"  
 
     } else if (scorevalue > 10 && scorevalue < 100){
         scorearray = []
@@ -44,8 +44,8 @@ function ProcessScore(){
             let x = parseInt(scorevaluestring[snumber])
             scorearray.push(x)
         }
-        score.src = "/static/" + scorearray[0] + ".png"
-        score2.src = "/static/" + scorearray[1] + ".png"      
+        score.src = scorearray[0] + ".png"
+        score2.src =  scorearray[1] + ".png"      
 
     } else if (scorevalue == 100){
         scorearray = []
@@ -55,10 +55,10 @@ function ProcessScore(){
             let x = parseInt(scorevaluestring[snumber])
             scorearray.push(x)
         }
-        score.src = "/static/" + scorearray[0] + ".png"
-        score2.src = "/static/" + scorearray[1] + ".png"
+        score.src =  scorearray[0] + ".png"
+        score2.src =  scorearray[1] + ".png"
         background.appendChild(score3)
-        score3.src = "/static/" + scorearray[2] + ".png"
+        score3.src =  scorearray[2] + ".png"
     } else if (scorevalue > 100){
         scorearray = []
         let scorevaluestring = JSON.stringify(scorevalue)
@@ -66,11 +66,11 @@ function ProcessScore(){
             let x = parseInt(scorevaluestring[snumber])
             scorearray.push(x)
         }
-        score.src = "/static/" + scorearray[0] + ".png"
-        score2.src = "/static/" + scorearray[1] + ".png"
-        score3.src = "/static/" + scorearray[2] + ".png"
+        score.src =  scorearray[0] + ".png"
+        score2.src =  scorearray[1] + ".png"
+        score3.src =  scorearray[2] + ".png"
     } else {
-        score.src = "/static/" + scorevalue + ".png"
+        score.src =  scorevalue + ".png"
     }
 }
 
@@ -181,14 +181,14 @@ background.style.height = "490px" /*Correct height is 580px*/
 background.style.width = "420px" 
 background.style.margin = "auto"
 background.style.backgroundSize = "100%"
-background.style.backgroundImage = "url('/static/fbbackground.png')"
+background.style.backgroundImage = 'fbbackground.png'
 background.style.overflow = "hidden"
 background.style.position = "relative"
 document.body.appendChild(background)
 
 ground = document.createElement("div")
 ground.id = "movingground"
-ground.style.backgroundImage = "url('/static/fbground.png')"
+ground.style.backgroundImage = 'fbground.png'
 ground.style.backgroundSize = "100%"
 ground.style.backgroundRepeat = "repeat-x"
 ground.style.animationPlayState = 'running';
@@ -199,25 +199,25 @@ ground.style.position = "absolute"
 ground.style.top = "490px"
 document.body.appendChild(ground)
 
-picarray = ["/static/Upbird.png",
-            "/static/Midbird1.png",
-            "/static/Midbird2.png",
-            "/static/Downbird.png"]
+picarray = ["Upbird.png",
+            "Midbird1.png",
+            "Midbird2.png",
+            "Downbird.png"]
 playerbird = new Image()
-playerbird.src = "/static/Upbird.png"
+playerbird.src = "Upbird.png"
 playerbird.style.position = "absolute"
 playerbird.style.left = "145px"
 playerbird.style.height = "45px"
 playerbird.style.width = "60px"
 playerbird.style.top = "200px"
-birdjump = new Audio("/static/jump.mp3");
-birdhit = new Audio("/static/audio_hit.wav")
+birdjump = new Audio("jump.mp3");
+birdhit = new Audio("audio_hit.wav")
 birdfail = new Audio("static/audio_die.ogg")
-birdscore = new Audio("/static/audiopoint.wav")
+birdscore = new Audio("audiopoint.wav")
 background.appendChild(playerbird)
 
 title = new Image()
-title.src = "/static/FlappyBirdTitleText.jpg"
+title.src = "FlappyBirdTitleText.jpg"
 title.style.position = "absolute"
 title.style.left = "135px"
 title.style.top = "20px"
@@ -226,13 +226,13 @@ title.style.margin = "auto"
 background.appendChild(title)
 
 score = new Image()
-score.src = "/static/" + scorevalue + ".png"
+score.src =  scorevalue + ".png"
 score.style.position = "absolute"
 score.style.height = "27px"
 score.style.width = "20px"
 
 score2 = new Image()
-score2.src = "/static/" + scorevalue + ".png"
+score2.src = scorevalue + ".png"
 score2.style.position = "absolute"
 score2.style.height = "27px"
 score2.style.top = "30px"
@@ -240,7 +240,7 @@ score2.style.left = scoreleft + "px"
 score2.style.width = "20px"
 
 score3 = new Image()
-score3.src = "/static/" + scorevalue + ".png"
+score3.src = scorevalue + ".png"
 score3.style.position = "absolute"
 score3.style.height = "27px"
 score3.style.top = "30px"
@@ -306,7 +306,7 @@ function startgame(){
         var pipebottom = 0
 
         pipetop = new Image()
-        pipetop.src = "/static/flappybird-pipe.png"
+        pipetop.src = "flappybird-pipe.png"
         pipetop.style.position = "absolute"
         pipetop.style.top = toppheight + "px" /*bottom pipe has to be +450 of this number, the greater the number, the lower the pipe, highest is 1*/
         pipetop.style.right = moverightcount + "px"
@@ -314,7 +314,7 @@ function startgame(){
         background.appendChild(pipetop)
 
         pipebottom = new Image()
-        pipebottom.src = "/static/flappybird-pipe.png"
+        pipebottom.src = "flappybird-pipe.png"
         pipebottom.style.position = "absolute"
         pipebottom.style.top = bottompheight + "px" /*lowest number this can be is 189px, highest is 450, -450 for above number*/
         pipebottom.style.right = moverightcount + "px"
