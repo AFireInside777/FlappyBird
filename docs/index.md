@@ -3,9 +3,6 @@
 <html>
 
     <head>
-
-        
-
         <style>
             #movingground {
                 animation: slideright 55s infinite linear;
