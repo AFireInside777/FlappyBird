@@ -58,9 +58,9 @@
                         let x = parseInt(scorevaluestring[snumber])
                         scorearray.push(x)
                     }
-                    score.src = "/static/" + scorearray[0] + ".png"
+                    score.src = scorearray[0] + ".png"
                     background.appendChild(score2)     
-                    score2.src = "/static/" + scorearray[1] + ".png"  
+                    score2.src = scorearray[1] + ".png"  
 
                 } else if (scorevalue > 10 && scorevalue < 100){
                     scorearray = []
@@ -69,8 +69,8 @@
                         let x = parseInt(scorevaluestring[snumber])
                         scorearray.push(x)
                     }
-                    score.src = "/static/" + scorearray[0] + ".png"
-                    score2.src = "/static/" + scorearray[1] + ".png"      
+                    score.src = scorearray[0] + ".png"
+                    score2.src = scorearray[1] + ".png"      
 
                 } else if (scorevalue == 100){
                     scorearray = []
@@ -80,10 +80,10 @@
                         let x = parseInt(scorevaluestring[snumber])
                         scorearray.push(x)
                     }
-                    score.src = "/static/" + scorearray[0] + ".png"
-                    score2.src = "/static/" + scorearray[1] + ".png"
+                    score.src = scorearray[0] + ".png"
+                    score2.src = scorearray[1] + ".png"
                     background.appendChild(score3)
-                    score3.src = "/static/" + scorearray[2] + ".png"
+                    score3.src = scorearray[2] + ".png"
                 } else if (scorevalue > 100){
                     scorearray = []
                     let scorevaluestring = JSON.stringify(scorevalue)
@@ -91,11 +91,11 @@
                         let x = parseInt(scorevaluestring[snumber])
                         scorearray.push(x)
                     }
-                    score.src = "/static/" + scorearray[0] + ".png"
-                    score2.src = "/static/" + scorearray[1] + ".png"
-                    score3.src = "/static/" + scorearray[2] + ".png"
+                    score.src = scorearray[0] + ".png"
+                    score2.src = scorearray[1] + ".png"
+                    score3.src = scorearray[2] + ".png"
                 } else {
-                    score.src = "/static/" + scorevalue + ".png"
+                    score.src = scorevalue + ".png"
                 }
             }
 
@@ -242,7 +242,7 @@
             background.appendChild(playerbird)
 
             title = new Image()
-            title.src = "/static/FlappyBirdTitleText.jpg"
+            title.src = "FlappyBirdTitleText.jpg"
             title.style.position = "absolute"
             title.style.left = "135px"
             title.style.top = "20px"
@@ -251,13 +251,13 @@
             background.appendChild(title)
 
             score = new Image()
-            score.src = "/static/" + scorevalue + ".png"
+            score.src = scorevalue + ".png"
             score.style.position = "absolute"
             score.style.height = "27px"
             score.style.width = "20px"
 
             score2 = new Image()
-            score2.src = "/static/" + scorevalue + ".png"
+            score2.src = scorevalue + ".png"
             score2.style.position = "absolute"
             score2.style.height = "27px"
             score2.style.top = "30px"
@@ -265,7 +265,7 @@
             score2.style.width = "20px"
 
             score3 = new Image()
-            score3.src = "/static/" + scorevalue + ".png"
+            score3.src = scorevalue + ".png"
             score3.style.position = "absolute"
             score3.style.height = "27px"
             score3.style.top = "30px"
