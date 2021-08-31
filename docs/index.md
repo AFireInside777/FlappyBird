@@ -219,9 +219,9 @@
             ground.style.animationPlayState = 'running';
             ground.style.height = "137px" /*Correct height is 115px*/
             ground.style.width = "420px"
-            ground.style.right = "390px"
+            ground.style.right = "690px"
             ground.style.position = "relative"
-            ground.style.top = "750px"
+            ground.style.top = "600px"
             document.body.appendChild(ground)
 
             picarray = ["Upbird.png",
