@@ -322,7 +322,7 @@
                         window.requestAnimationFrame(Jump)
                     }
                 }
-                window.addEventListener("touchstart", Jump);
+           
                 playerbird.style.top = amount + "px"
 
                 pipeInt = setInterval(function(){
