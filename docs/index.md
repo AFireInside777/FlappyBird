@@ -221,7 +221,7 @@
             ground.style.width = "420px"
             ground.style.right = "590px"
             ground.style.position = "absolute"
-            ground.style.top = "490px"
+            ground.style.top = "690px"
             document.body.appendChild(ground)
 
             picarray = ["Upbird.png",
