@@ -167,7 +167,7 @@
 
                 if (birdbottom >= bgbottom){
                     var stoppos = (bgbottom) - birdheight
-                    playerbird.style.top = (stoppos) + "px"
+                    playerbird.style.top = (stoppos+100) + "px"
                     velocity = 0
                     return "finished"
                 }
