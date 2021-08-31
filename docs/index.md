@@ -219,7 +219,7 @@
             ground.style.animationPlayState = 'running';
             ground.style.height = "137px" /*Correct height is 115px*/
             ground.style.width = "420px"
-            ground.style.right = "590px"
+            ground.style.right = "500px"
             ground.style.position = "relative"
             ground.style.top = "500px"
             document.body.appendChild(ground)
