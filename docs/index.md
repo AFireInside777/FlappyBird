@@ -309,7 +309,7 @@
             }
 
             titlefloat = window.requestAnimationFrame(movebird)
-
+            
             function startgame(){
                 cancelAnimationFrame(titlefloat)
                 score.style.top = "30px";
@@ -322,6 +322,7 @@
                         window.requestAnimationFrame(Jump)
                     }
                 }
+                window.addEventListener("touchstart", Jump);
                 playerbird.style.top = amount + "px"
 
                 pipeInt = setInterval(function(){
