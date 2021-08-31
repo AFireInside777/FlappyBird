@@ -209,14 +209,14 @@
             background.style.width = "420px" 
             background.style.margin = "auto"
             background.style.backgroundSize = "100%"
-            background.style.backgroundImage = "url('/static/fbbackground.png')"
+            background.style.backgroundImage = "url('/docs/fbbackground.png')"
             background.style.overflow = "hidden"
             background.style.position = "relative"
             document.body.appendChild(background)
 
             ground = document.createElement("div")
             ground.id = "movingground"
-            ground.style.backgroundImage = "url('/static/fbground.png')"
+            ground.style.backgroundImage = "url('/docs/fbground.png')"
             ground.style.backgroundSize = "100%"
             ground.style.backgroundRepeat = "repeat-x"
             ground.style.animationPlayState = 'running';
@@ -238,9 +238,9 @@
             playerbird.style.height = "45px"
             playerbird.style.width = "60px"
             playerbird.style.top = "200px"
-            birdjump = new Audio("/static/jump.mp3");
-            birdhit = new Audio("/static/audio_hit.wav")
-            birdfail = new Audio("static/audio_die.ogg")
+            birdjump = new Audio("/docs/jump.mp3");
+            birdhit = new Audio("/docs/audio_hit.wav")
+            birdfail = new Audio("docs/audio_die.ogg")
             birdscore = new Audio("/static/audiopoint.wav")
             background.appendChild(playerbird)
 
