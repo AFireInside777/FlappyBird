@@ -209,14 +209,14 @@
             background.style.width = "420px" 
             background.style.margin = "auto"
             background.style.backgroundSize = "100%"
-            background.style.backgroundImage = "url('/docs/fbbackground.png')"
+            background.style.backgroundImage = "url('fbbackground.png')"
             background.style.overflow = "hidden"
             background.style.position = "relative"
             document.body.appendChild(background)
 
             ground = document.createElement("div")
             ground.id = "movingground"
-            ground.style.backgroundImage = "url('/docs/fbground.png')"
+            ground.style.backgroundImage = "url('fbground.png')"
             ground.style.backgroundSize = "100%"
             ground.style.backgroundRepeat = "repeat-x"
             ground.style.animationPlayState = 'running';
@@ -227,21 +227,21 @@
             ground.style.top = "490px"
             document.body.appendChild(ground)
 
-            picarray = ["/static/Upbird.png",
-                        "/static/Midbird1.png",
-                        "/static/Midbird2.png",
-                        "/static/Downbird.png"]
+            picarray = ["Upbird.png",
+                        "Midbird1.png",
+                        "Midbird2.png",
+                        "Downbird.png"]
             playerbird = new Image()
-            playerbird.src = "/static/Upbird.png"
+            playerbird.src = "Upbird.png"
             playerbird.style.position = "absolute"
             playerbird.style.left = "145px"
             playerbird.style.height = "45px"
             playerbird.style.width = "60px"
             playerbird.style.top = "200px"
-            birdjump = new Audio("/docs/jump.mp3");
-            birdhit = new Audio("/docs/audio_hit.wav")
-            birdfail = new Audio("docs/audio_die.ogg")
-            birdscore = new Audio("/static/audiopoint.wav")
+            birdjump = new Audio("jump.mp3");
+            birdhit = new Audio("audio_hit.wav")
+            birdfail = new Audio("audio_die.ogg")
+            birdscore = new Audio("audiopoint.wav")
             background.appendChild(playerbird)
 
             title = new Image()
@@ -334,7 +334,7 @@
                     var pipebottom = 0
 
                     pipetop = new Image()
-                    pipetop.src = "/static/flappybird-pipe.png"
+                    pipetop.src = "flappybird-pipe.png"
                     pipetop.style.position = "absolute"
                     pipetop.style.top = toppheight + "px" /*bottom pipe has to be +450 of this number, the greater the number, the lower the pipe, highest is 1*/
                     pipetop.style.right = moverightcount + "px"
@@ -342,7 +342,7 @@
                     background.appendChild(pipetop)
 
                     pipebottom = new Image()
-                    pipebottom.src = "/static/flappybird-pipe.png"
+                    pipebottom.src = "flappybird-pipe.png"
                     pipebottom.style.position = "absolute"
                     pipebottom.style.top = bottompheight + "px" /*lowest number this can be is 189px, highest is 450, -450 for above number*/
                     pipebottom.style.right = moverightcount + "px"
